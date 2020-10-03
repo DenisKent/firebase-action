@@ -1,7 +1,6 @@
-FROM node:latest
+FROM timbru31/node-alpine-git
+# git is required when install firebase-tools
 
-# git is now required when install firebase-tools
-RUN apk add --no-cache git
 
 RUN npm install -g firebase-tools
 
